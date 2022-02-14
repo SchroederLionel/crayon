@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Crayon</title>
+    <!--================================ UNICONS =================================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!--================================ SWIPER CSS =================================-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/lightslider.css" />
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/lightslider.js"></script>
+  </head>
+  <body>
+    <!--================================ HEADER =================================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo landing__title">Crayon</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-book nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#thesis" class="nav__link">
+                <i class="uil uil-home nav__icon"></i> My Thesis
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#student" class="nav__link">
+                <i class="uil uil-nerd nav__icon"></i>Student
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#management" class="nav__link">
+                <i class="uil uil-constructor nav__icon"></i>Management
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#explanation" class="nav__link">
+                <i class="uil uil-play nav__icon"></i>Tutorials
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps nav__icon"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div id="ct">
+            <div class="corner" id="left_top"></div>
+            <div class="corner" id="left_bottom"></div>
+            <div class="corner" id="right_top"></div>
+            <div class="corner" id="right_bottom"></div>
+            <span id="quote__title">Albert Einstein</span>
+            <blockquote>
+              <p id="quote__content">
+                <i
+                  >&ldquo;It is the supreme art of the teacher to awaken joy in
+                  creative expression and knowledge.&rdquo;
+                </i>
+              </p>
+            </blockquote>
+          </div>
+          <div class="home__blob">
+            <img
+              id="img__crayon_student"
+              src="assets/images/start.png"
+              alt="Crayon student  application"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="thesis section" id="thesis">
+        <h2 class="section__title">My Thesis</h2>
+        <span class="section__subtitle"
+          >Implementing Collaboration Applications with an Unconventional
+          Software Architecture</span
+        >
+        <div class="center">
+          <a href="assets/pdf/master.pdf" class="button button--flex" download>
+            Download Thesis<i class="uil uil-arrow-down button__icon"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="student section" id="student">
+        <h2 class="section__title">Crayon Student</h2>
+        <span class="section__subtitle"
+          >The only student application required</span
+        >
+        <div class="container2">
+          <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Login</p>
+                <img
+                  src="assets/images/student/login_hell.png"
+                  class="img__model"
+                />
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Login Dark</p>
+                <img
+                  src="assets/images/student/login_dark.png"
+                  class="img__model"
+                />
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Dashboard</p>
+                <img
+                  src="assets/images/student/dashboard_hell.png"
+                  class="img__model"
+                />
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Dashboard Dark</p>
+                <img
+                  src="assets/images/student/dashboard_dark.png"
+                  class="img__model"
+                />
+              </div>
+            </li>
+
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Join lecture</p>
+                <img
+                  src="assets/images/student/dashboard_join_quiz.png"
+                  class="img__model"
+                />
+              </div>
+            </li>
+
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Quiz</p>
+                <img src="assets/images/student/quiz.png" class="img__model" />
+              </div>
+            </li>
+
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Score</p>
+                <img
+                  src="assets/images/student/quiz_score.png"
+                  class="img__model"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="managment section" id="management">
+        <h2 class="section__title">Crayon Management</h2>
+        <span class="section__subtitle"
+          >Get your teaching content out to your students</span
+        >
+        <div class="container2">
+          <ul id="managementList" class="cs-hidden">
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Login</p>
+                <img
+                  src="assets/images/management/login_dark.png"
+                  class="img__model_management"
+                />
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Dashboard Dark</p>
+                <img
+                  src="assets/images/management/dashboard_dark.png"
+                  class="img__model_management"
+                />
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Dashboard</p>
+                <img
+                  src="assets/images/management/dashboard_hell.png"
+                  class="img__model_management"
+                />
+              </div>
+            </li>
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Detailed Lecture Dark</p>
+                <img
+                  src="assets/images/management/detail_lecture_dark.png"
+                  class="img__model_management"
+                />
+              </div>
+            </li>
+
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Detailed Lecture</p>
+                <img
+                  src="assets/images/management/detail_lecture_hell.png"
+                  class="img__model_management"
+                />
+              </div>
+            </li>
+
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Quiz Process</p>
+                <img
+                  src="assets/images/management/start_quiz_hell.png"
+                  class="img__model_management"
+                />
+              </div>
+            </li>
+
+            <li class="item-a">
+              <div class="box">
+                <p class="img__title">Presentation mode</p>
+                <img
+                  src="assets/images/management/start_quiz_hell.png"
+                  class="img__model_management"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="explanation section" id="explanation">
+        <h2 class="section__title">Explanations</h2>
+        <span class="section__subtitle">How to do it?</span>
+        <div class="container3">
+          <div class="main-video">
+            <div class="video">
+              <video
+                src="assets/video/statemanagement.mp4"
+                controls
+                muted
+                autoplay
+              ></video>
+              <h3 class="video__title">01. Why statemanagement?</h3>
+            </div>
+          </div>
+
+          <div class="video-list">
+            <div class="vid active">
+              <video src="assets/video/statemanagement.mp4" muted></video>
+              <h3 class="video__title">0.1 Why statemanagement?</h3>
+            </div>
+
+            <div class="vid">
+              <video src="assets/video/question_process.mp4" muted></video>
+              <h3 class="video__title">
+                0.2 How can a student ask a question?
+              </h3>
+            </div>
+            <div class="vid">
+              <video src="assets/video/Quiz_Process.mp4" muted></video>
+              <h3 class="video__title">0.3 How to start a quiz?</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Lionel</h1>
+            <span class="footer__subtitle">Fullstack developer</span>
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#student" class="footer__link">Student</a>
+            </li>
+            <li>
+              <a href="#thesis" class="footer__link">My Thesis</a>
+            </li>
+            <li>
+              <a href="#management" class="footer__link">Management</a>
+            </li>
+            <li>
+              <a href="#explanation" class="footer__link">Explanation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!--================================ SWIPER  JS =================================-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!--================================ MAIN JS =================================-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
